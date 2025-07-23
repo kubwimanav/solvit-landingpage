@@ -16,7 +16,7 @@ function Input({label, type, placeholder, value, onChange, className }) {
       <input
         type="text"
         placeholder="Subject"
-        className="border border-teal-700 rounded-md p-4 w-2xl "
+        className="border border-teal-700 rounded-md p-4 sm:w-2xl "
       />
 
           <textarea name="" id="" placeholder='Your Message' className=' border border-teal-700 p-4 h-32 rounded-md'></textarea>
