@@ -93,9 +93,9 @@ function Landing() {
           </span>
         </div>
         <div>
-          <GiHamburgerMenu  className=' text-2xl sm:hidden'/>
+          <GiHamburgerMenu  className=' text-2xl md:hidden'/>
         </div>
-        <ul className=" hidden  sm:flex font-bold justify-between items-center gap-20 text-black">
+        <ul className=" hidden  sm:hidden  md:flex font-bold justify-between items-center gap-20 text-black">
           <li>
             <a href="">Home </a>
           </li>
@@ -138,12 +138,12 @@ function Landing() {
           <h2 className="text-2xl font-bold">
             We Offer Creative Working environments
           </h2>
-          <p className="sm:w-1/2 text-center">
+          <p className="md:w-1/2 text-center">
             We offer a range of services to meet your business needs, from
             flexible workspace solutions to professional networking
             opportunities.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-col md:flex-row gap-4">
             {cards.map((card, index) => (
               <Card
                 key={index}
@@ -163,15 +163,15 @@ function Landing() {
               <div className=" h-5 w-5 border-1 border-teal-700 rounded-full"></div>
             </div>
 
-            <div className=" flex flex-col sm:flex-row gap-9">
-              <div className=" sm:px-20 ">
+            <div className=" flex flex-col sm:flex-col md:flex-row gap-9">
+              <div className=" sm:px-5 md:px-20 ">
                 <span className=" text-teal-500 font-bold">About Us</span>
-                <h1 className=" font-bold text-xl sm:text-3xl sm:w-sm">
+                <h1 className=" font-bold text-xl  sm:text-2xl  md:3xl sm:w-sm">
                   We offer creative working environments that suit your business
                 </h1>
               </div>
 
-              <div className=" flex flex-col gap-3 px-5 sm:px-20 border-l-2 border-teal-500">
+              <div className=" flex flex-col gap-3 px-5 sm:px-5 md:px-20 border-l-2 border-teal-500">
                 <p className=" ">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit
                   torquent, conubia leo rutrum praesent dui turpis lobortis,
@@ -192,15 +192,15 @@ function Landing() {
                 <h5 className="text-2xl  font-black bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
                   Why Choose Us
                 </h5>
-                <p className="text-xm  text-black sm:max-w-1/2 mx-auto ">
+                <p className="text-xm  text-black md:max-w-1/2 mx-auto ">
                   Unleash your productivity with our premium workspace
                   solutions. Elevate your work game and join the winning team
                   today.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
-                <div className="space-y-8 ">
+              <div className="grid grid-cols-1  lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+                <div className="space-y-8">
                   {iconCards.map((iconCard, index) => (
                     <IconCard
                       key={index}
@@ -218,7 +218,7 @@ function Landing() {
                   />
                 </div>
 
-                <div className="space-y-8 ">
+                <div className="space-y-8  ">
                   {leftcard.map((iconCard, index) => (
                     <IconCard
                       key={index}
@@ -237,10 +237,10 @@ function Landing() {
             className=" flex flex-col gap-8 items-center justify-center text-white  py-9"
             style={{ backgroundImage: `url(${bg})` }}
           >
-            <h2 className="text-2xl sm:text-4xl font-bold text-center p-3 flex flex-row">
+            <h2 className="text-2xl sm:text-3xl  font-bold text-center p-3 flex flex-row">
               <span className="text-teal-500">Our</span> Mission
             </h2>
-            <p className="sm:w-4xl text-center font-bold">
+            <p className="md:w-4xl text-center font-bold">
               Lorem ipsum dolor sit amet consectetur adipiscing elit, mattis
               blandit odio felis aliquet montes turpis consequat, est sociosqu
               vitae id nec rutrum. Ornare dictumst et eget fames cursus vel
@@ -255,7 +255,7 @@ function Landing() {
           </div>
         </section>
 
-        <section className=" flex flex-col px-9  gap-3 sm:flex-row sm:px-0  justify-around py-20  ">
+        <section className=" flex flex-col px-9  gap-3 sm:flex-col sm:px-9 md:flex-row md:px-0  justify-around py-20  ">
           <div className=" flex flex-col gap-6">
             <div className=" flex flex-col gap-3">
               <p className=" font-bold text-teal-500">Contact Us</p>
@@ -282,7 +282,7 @@ function Landing() {
       </main>
 
       <footer className="flex flex-col gap-4 items-center justify-center pb-14 pt-14">
-        <div className=" flex  flex-col gap-9 sm:flex-row sm:gap-50 bg-white p-6 border-b-[1.5px] border-t-[1.5px] border-teal-500 ">
+        <div className=" flex  flex-col gap-9 sm:flex-col md:flex-row sm:gap-9 md:gap-50 bg-white p-6 border-b-[1.5px] border-t-[1.5px] border-teal-500 ">
           <div className="flex flex-col gap-2">
             <div className="flex gap-2 items-center">
               <LuLayoutGrid className="h-8 w-8 text-teal-500" />
